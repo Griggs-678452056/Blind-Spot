@@ -22,14 +22,19 @@ namespace BlindSpot
             _moveAction.action.Enable();
         }
 
-        private void OnDisable()
+        private void Reset()
         {
-            _moveAction.action.Disable();
+            _controller = GetComponent<CharacterController>();
         }
 
         private void Update()
         {
             Move();
+        }
+
+        private void OnDisable()
+        {
+            _moveAction.action.Disable();
         }
 
         private void Move()
@@ -59,11 +64,6 @@ namespace BlindSpot
                     lookDirection,
                     _turnSpeed * Time.deltaTime);
             }
-        }
-
-        private void Reset()
-        {
-            _controller = GetComponent<CharacterController>();
         }
     }
 }
