@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +11,8 @@ namespace BlindSpot
         [SerializeField] private float _moveSpeed = 5f;
         [SerializeField] private float _gravity = -9.81f;
 
+        private WinLoseController _winLoseController;
+
         [SerializeField] private Transform _model;
         [SerializeField] private float _turnSpeed = 12f;
 
@@ -22,9 +23,10 @@ namespace BlindSpot
             _moveAction.action.Enable();
         }
 
-        private void Reset()
+        private void Start()
         {
             _controller = GetComponent<CharacterController>();
+            _winLoseController = FindAnyObjectByType<WinLoseController>();
         }
 
         private void Update()
@@ -35,6 +37,14 @@ namespace BlindSpot
         private void OnDisable()
         {
             _moveAction.action.Disable();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Finish"))
+            {
+                _winLoseController.ShowWinPanel();
+            }
         }
 
         private void Move()

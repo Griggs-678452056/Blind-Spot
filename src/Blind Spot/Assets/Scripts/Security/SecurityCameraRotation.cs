@@ -18,6 +18,8 @@ namespace BlindSpot
         [field: SerializeField] public float PlayerViewAngle { get; private set; } = 60f;
         [field: SerializeField] public float PlayerViewRange { get; private set; } = 10f;
 
+        private WinLoseController _winLoseController;
+
         private void Awake()
         {
             _initialRotation = transform.localRotation;
@@ -31,6 +33,8 @@ namespace BlindSpot
             {
                 _player = player.transform;
             }
+
+            _winLoseController = FindAnyObjectByType<WinLoseController>();
         }
 
         private void Update()
@@ -92,6 +96,7 @@ namespace BlindSpot
                 if (hit.collider.CompareTag("Player"))
                 {
                     _canSeePlayer = true;
+                    _winLoseController.ShowLosePanel();
                 }
             }
         }
