@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8638631950169440624}
-  - component: {fileID: 1098163546299168219}
   m_Layer: 0
   m_Name: Box Preset
   m_TagString: Untagged
@@ -34,27 +33,6 @@ Transform:
   - {fileID: 7586127325466366936}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1098163546299168219
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4321416925704072058}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.9, z: 1}
-  m_Center: {x: 0, y: 0.95, z: 0}
 --- !u!1001 &4068306459375814035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,13 +89,42 @@ PrefabInstance:
     - {fileID: 833173055, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 354099919822039147, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7880867292405054970}
   m_SourcePrefab: {fileID: 100100000, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
 --- !u!4 &4022932207001220930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1126415219792081617, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
   m_PrefabInstance: {fileID: 4068306459375814035}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4368354387424800248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 354099919822039147, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
+  m_PrefabInstance: {fileID: 4068306459375814035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7880867292405054970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4368354387424800248}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0096729, y: 0.91667753, z: 1.0443743}
+  m_Center: {x: 0, y: 0.45833877, z: 0.00000029802322}
 --- !u!1001 &7414756981900206345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,8 +181,37 @@ PrefabInstance:
     - {fileID: 833173055, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 354099919822039147, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1498415885255554259}
   m_SourcePrefab: {fileID: 100100000, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
+--- !u!1 &7065169458804738402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 354099919822039147, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}
+  m_PrefabInstance: {fileID: 7414756981900206345}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1498415885255554259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7065169458804738402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0096729, y: 0.91667753, z: 1.0443743}
+  m_Center: {x: 0, y: 0.45833877, z: 0.00000029802322}
 --- !u!4 &7586127325466366936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1126415219792081617, guid: 609e7b7606cdb8c4faa1bd70f4a4270f, type: 3}

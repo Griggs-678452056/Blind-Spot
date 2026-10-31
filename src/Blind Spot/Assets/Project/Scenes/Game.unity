@@ -505,28 +505,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223275959}
   m_CullTransparentMesh: 1
---- !u!1 &303819350 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6480055826160078940, guid: ee71d35d384fc6a48856e7cd3e633289, type: 3}
-  m_PrefabInstance: {fileID: 2356491709714039222}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &303819354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303819350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7da8526517e624ba1eac4d39280ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlindSpot.FieldOfViewVisualizer
-  _securityCamera: {fileID: 2356491709714039224}
-  _obstacleMask:
-    serializedVersion: 2
-    m_Bits: 64
-  _rayCount: 60
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3708,7 +3686,7 @@ PrefabInstance:
     - target: {fileID: 4954370661789321139, guid: ee71d35d384fc6a48856e7cd3e633289, type: 3}
       propertyPath: _securityCamera
       value: 
-      objectReference: {fileID: 2356491709714039224}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083877938786577227, guid: ee71d35d384fc6a48856e7cd3e633289, type: 3}
       propertyPath: m_Name
       value: SecurityCamera
@@ -3724,36 +3702,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7083877938786577227, guid: ee71d35d384fc6a48856e7cd3e633289, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2356491709714039224}
-    - targetCorrespondingSourceObject: {fileID: 6480055826160078940, guid: ee71d35d384fc6a48856e7cd3e633289, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 303819354}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee71d35d384fc6a48856e7cd3e633289, type: 3}
---- !u!1 &2356491709714039223 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7083877938786577227, guid: ee71d35d384fc6a48856e7cd3e633289, type: 3}
-  m_PrefabInstance: {fileID: 2356491709714039222}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2356491709714039224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2356491709714039223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 615b9add271e41949a14b8156d1dd694, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlindSpot.SecurityCameraRotation
-  _rotationAngle: 60
-  _rotationSpeed: 30
-  <ViewPoint>k__BackingField: {fileID: 1639429503}
-  <PlayerViewAngle>k__BackingField: 60
-  <PlayerViewRange>k__BackingField: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
