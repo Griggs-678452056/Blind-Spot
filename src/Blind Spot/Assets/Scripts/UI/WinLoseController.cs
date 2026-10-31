@@ -45,7 +45,7 @@ namespace BlindSpot
         public void ContinueGame()
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("Level");
         }
 
         public void LoadMainMenu()

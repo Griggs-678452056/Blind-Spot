@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 6525817908324634513}
   - component: {fileID: 1400083143344289217}
   - component: {fileID: 8925509726900841610}
+  - component: {fileID: 6291046088850071831}
   m_Layer: 0
   m_Name: Field of View
   m_TagString: Untagged
@@ -304,6 +305,23 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6291046088850071831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480055826160078940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7da8526517e624ba1eac4d39280ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlindSpot.FieldOfViewVisualizer
+  _securityCamera: {fileID: 5691690119481252094}
+  _obstacleMask:
+    serializedVersion: 2
+    m_Bits: 64
+  _rayCount: 60
 --- !u!1 &7083877938786577227
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3607564143260346044}
+  - component: {fileID: 5691690119481252094}
   m_Layer: 0
   m_Name: SecurityCamera
   m_TagString: Untagged
@@ -329,7 +348,7 @@ Transform:
   m_GameObject: {fileID: 7083877938786577227}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 5}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -337,6 +356,23 @@ Transform:
   - {fileID: 6525817908324634513}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5691690119481252094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7083877938786577227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615b9add271e41949a14b8156d1dd694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlindSpot.SecurityCameraRotation
+  _rotationAngle: 60
+  _rotationSpeed: 30
+  <ViewPoint>k__BackingField: {fileID: 8218809429892933436}
+  <PlayerViewAngle>k__BackingField: 60
+  <PlayerViewRange>k__BackingField: 8
 --- !u!1 &7933918146135507485
 GameObject:
   m_ObjectHideFlags: 0

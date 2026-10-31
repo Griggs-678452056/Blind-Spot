@@ -8,7 +8,7 @@ namespace BlindSpot
         public void StartGame()
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("Level");
         }
 
         public void QuitGame()
