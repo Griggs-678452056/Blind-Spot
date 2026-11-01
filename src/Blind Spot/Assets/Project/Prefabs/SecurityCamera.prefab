@@ -372,7 +372,7 @@ MonoBehaviour:
   _rotationSpeed: 30
   <ViewPoint>k__BackingField: {fileID: 8218809429892933436}
   <PlayerViewAngle>k__BackingField: 60
-  <PlayerViewRange>k__BackingField: 8
+  <PlayerViewRange>k__BackingField: 8.5
 --- !u!1 &7933918146135507485
 GameObject:
   m_ObjectHideFlags: 0

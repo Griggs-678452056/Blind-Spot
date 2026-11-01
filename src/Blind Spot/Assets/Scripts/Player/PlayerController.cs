@@ -11,11 +11,12 @@ namespace BlindSpot
         [SerializeField] private float _moveSpeed = 5f;
         [SerializeField] private float _gravity = -9.81f;
 
+        [SerializeField] private Animator _animator;
+
         private WinLoseController _winLoseController;
 
         [SerializeField] private Transform _model;
         [SerializeField] private float _turnSpeed = 12f;
-
         private float _verticalVelocity;
 
         private void OnEnable()
@@ -64,6 +65,7 @@ namespace BlindSpot
             velocity.y = _verticalVelocity;
 
             _controller.Move(velocity * Time.deltaTime);
+            _animator.SetFloat("Speed", moveInput.magnitude);
 
             if (moveDirection.sqrMagnitude > 0.01f)
             {
@@ -74,6 +76,8 @@ namespace BlindSpot
                     lookDirection,
                     _turnSpeed * Time.deltaTime);
             }
+
+
         }
     }
 }

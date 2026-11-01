@@ -8,6 +8,12 @@ namespace BlindSpot
         [SerializeField] private GameObject _winPanel;
         [SerializeField] private GameObject _losePanel;
 
+        [SerializeField] private MusicPlayer _musicSource;
+        [SerializeField] private AudioSource _effectsSource;
+
+        [SerializeField] private AudioClip _winMusic;
+        [SerializeField] private AudioClip _loseMusic;
+
         private bool _isGameOver;
 
         public void ShowWinPanel()
@@ -18,6 +24,10 @@ namespace BlindSpot
             }
 
             _isGameOver = true;
+
+            _musicSource.StopMusic();
+            _effectsSource.PlayOneShot(_winMusic);
+
             _winPanel.SetActive(true);
             Time.timeScale = 0f;
         }
@@ -31,6 +41,10 @@ namespace BlindSpot
             }
 
             _isGameOver = true;
+
+            _musicSource.StopMusic();
+            _effectsSource.PlayOneShot(_loseMusic);
+
             _losePanel.SetActive(true);
             Time.timeScale = 0f;
         }

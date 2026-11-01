@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlindSpot.MenuCameraRotation
   _rotationAngle: 45
-  _rotationSpeed: 20
+  _rotationSpeed: 36
 --- !u!1 &7933918146135507485
 GameObject:
   m_ObjectHideFlags: 0
